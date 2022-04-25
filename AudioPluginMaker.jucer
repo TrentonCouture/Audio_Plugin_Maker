@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="l06W83" name="AudioPluginMaker" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="cj0MY1" name="AudioPluginMaker">
+    <GROUP id="{A67733FF-A3C0-B973-1CD8-6B5EAD5254EB}" name="Source">
+      <FILE id="CrZa3s" name="MovableButton.cpp" compile="1" resource="0"
+            file="Source/MovableButton.cpp"/>
+      <FILE id="ZUhb6o" name="MovableButton.h" compile="0" resource="0" file="Source/MovableButton.h"/>
+      <FILE id="l1TSZU" name="MovableSlider.cpp" compile="1" resource="0"
+            file="Source/MovableSlider.cpp"/>
+      <FILE id="eOmu1A" name="MovableSlider.h" compile="0" resource="0" file="Source/MovableSlider.h"/>
+      <FILE id="mTE3fU" name="GuiEditor.cpp" compile="1" resource="0" file="Source/GuiEditor.cpp"/>
+      <FILE id="LOrHQ7" name="GuiEditor.h" compile="0" resource="0" file="Source/GuiEditor.h"/>
+      <FILE id="UBiRQo" name="ProcessorConfig.cpp" compile="1" resource="0"
+            file="Source/ProcessorConfig.cpp"/>
+      <FILE id="JPLNeQ" name="ProcessorConfig.h" compile="0" resource="0"
+            file="Source/ProcessorConfig.h"/>
+      <FILE id="TFXBVF" name="ParameterDisplay.cpp" compile="1" resource="0"
+            file="Source/ParameterDisplay.cpp"/>
+      <FILE id="xBW7I5" name="ParameterDisplay.h" compile="0" resource="0"
+            file="Source/ParameterDisplay.h"/>
+      <FILE id="J9wfPK" name="ParameterWindow.cpp" compile="1" resource="0"
+            file="Source/ParameterWindow.cpp"/>
+      <FILE id="C2EnVe" name="ParameterWindow.h" compile="0" resource="0"
+            file="Source/ParameterWindow.h"/>
+      <FILE id="qNosWo" name="PreviewSection.cpp" compile="1" resource="0"
+            file="Source/PreviewSection.cpp"/>
+      <FILE id="CjKVc3" name="PreviewSection.h" compile="0" resource="0"
+            file="Source/PreviewSection.h"/>
+      <FILE id="XZWgQx" name="Connector.cpp" compile="1" resource="0" file="Source/Connector.cpp"/>
+      <FILE id="c9zYvD" name="Connector.h" compile="0" resource="0" file="Source/Connector.h"/>
+      <FILE id="mddYXa" name="Pin.cpp" compile="1" resource="0" file="Source/Pin.cpp"/>
+      <FILE id="Hjqf57" name="Pin.h" compile="0" resource="0" file="Source/Pin.h"/>
+      <FILE id="jgvY8C" name="Processor.cpp" compile="1" resource="0" file="Source/Processor.cpp"/>
+      <FILE id="YhZ0i7" name="Processor.h" compile="0" resource="0" file="Source/Processor.h"/>
+      <FILE id="oN3SIT" name="DspEditor.cpp" compile="1" resource="0" file="Source/DspEditor.cpp"/>
+      <FILE id="CMaXBc" name="DspEditor.h" compile="0" resource="0" file="Source/DspEditor.h"/>
+      <FILE id="QEl4FD" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="NInhdx" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="VNRCPh" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="AudioPluginMaker"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="AudioPluginMaker"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_extra"/>
+        <MODULEPATH id="juce_gui_basics"/>
+        <MODULEPATH id="juce_graphics"/>
+        <MODULEPATH id="juce_events"/>
+        <MODULEPATH id="juce_data_structures"/>
+        <MODULEPATH id="juce_core"/>
+        <MODULEPATH id="juce_audio_utils"/>
+        <MODULEPATH id="juce_audio_processors"/>
+        <MODULEPATH id="juce_audio_formats"/>
+        <MODULEPATH id="juce_audio_devices"/>
+        <MODULEPATH id="juce_audio_basics"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
